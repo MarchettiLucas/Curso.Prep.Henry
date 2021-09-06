@@ -1,0 +1,47 @@
+Variables: Es una forma de almacenar el valor de algo para usar mas tarde.
+
+Tipos de Datos:
+
+  String: Es un bloque de texto, se definiran por comillas o comillas dobles.
+Cualquier texto entre comillas es una cadena o string.
+
+  Numbers: Los numeros son solo eso. No es necesario definirlos entre comillas.
+Pueden ser negativos.
+
+  Boolean: Esto significa que tienes dos opciones, true o false. 
+
+
+Funciones: Son objetos invocables, por lo que tienen las mismas propiedades 
+que cualquier objeto. Teniendo variables, necesitamos de funciones para
+cambiarlas, calcularlas, hacer algo con ellas. Ej: function miFuncion() {}
+
+  Argumentos en Funciones: Si agregamos variables entre los parentesis 
+cuando declaramos nuestra funcion. Podemos usar estas variables dentro de 
+nuestra funcion. Iniciamos el valor de esta variable pasandola a la funcion 
+cuando la llamamos.
+ 
+  Return: Esta declaracion es la unica forma de que los datos escapen de 
+una funcion. Ejemplo:
+
+function dividirDosNumeros(a, b) {
+  var producto = a / b;
+  return producto;
+}
+
+dividirDosNumeros(6, 3); // 2
+
+
+Control de flujo (If):Esta es una forma de que nuestra funcion verifique si 
+algo es true o false y ya sea ejecutando el codigo suministrado o avanzando 
+si no lo es. Para esto usamos la palabra clave 'If'.
+Ejemplo:
+
+function puedeManejar(edad) {
+    if (edad > 18) {
+        return true;
+    }
+
+    return false;
+}
+
+puedeManejar(22); // true
